@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New project</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css?v=1" />
+    @@include('../libs/font-awesome.html')
+    <title>Новый проект</title>
+  </head>
+  <body>
+    <!-- Preloader -->
+    @@include('./components/preloader.html')
+
     <!-- Navbar -->
-    @@include('components/navbar.html')
+    @@include('./components/navbar.html')
+    @@include('./components/navbar_mobile.html')
 
-      <!-- Main -->
-      <main>
-
-        
-
-      </main>
+    <!-- Main -->
+    <main>
+      <div class="preview">
+        <div class="preview__content">
+          <p class="preview__text">Привет, это новый проект!</p>
+        </div>
+      </div>
+    </main>
 
     <!-- Footer -->
-    @@include('components/footer.html')
-
-</body>
+    @@include('./components/footer.html')
+    <script src="scripts/mobile_nav.min.js"></script>
+    <script src="scripts/preloader.min.js"></script>
+  </body>
 </html>

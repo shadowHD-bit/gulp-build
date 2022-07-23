@@ -1,0 +1,132 @@
+.footer {
+  width: auto;
+  height: auto;
+
+  .footer_container {
+    position: relative;
+    padding: 10px 120px;
+
+    @include media_1400 {
+      padding: 10px 120px;
+    }
+
+    @include media_1200 {
+      padding: 8px 120px;
+    }
+
+    @include media_992 {
+      padding: 6px 90px;
+    }
+
+    @include media_768 {
+      padding: 4px 60px;
+    }
+
+    @include media_576 {
+      padding: 2px 30px;
+    }
+
+    .footer_content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      @include media_768 {
+        flex-direction: column;
+      }
+
+      .footer__about_block {
+        width: 33.3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+
+        @include media_768 {
+            width: 100%;
+        }
+
+        @include media_576 {
+            display: none;
+        }
+
+        .footer__description {
+          padding: 20px;
+
+          .footer__description_text {
+            font-family: "Montserrat", sans-serif;
+            font-size: 16px;
+            color: $dark-slate-gray;
+          }
+        }
+      }
+
+      .footer__link_block {
+        width: 33.3%;
+        height: auto;
+
+        @include media_768 {
+            width: 100%;
+        }
+
+        .footer_nav {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .footer__nav-list {
+            list-style: none;
+
+            .footer__nav-item {
+              padding: 5px 0px;
+              margin: 5px 0px;
+              text-align: center;
+
+              .footer__nav-link {
+                text-decoration: none;
+                font-family: "Montserrat", sans-serif;
+                font-size: 16px;
+                color: $dark-slate-gray;
+              }
+
+              .footer__nav-link:hover {
+                color: $light-cornflower-blue;
+              }
+            }
+          }
+        }
+      }
+
+      .footer__other {
+        width: 33.3%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include media_1200 {
+          display: none;
+        }
+
+        .footer__btn-example {
+          padding: 15px 30px;
+          border: none;
+          border-radius: 10px;
+          font-family: "Montserrat", sans-serif;
+          font-size: 16px;
+          color: $white;
+          background-color: $oxford-blue;
+          cursor: pointer;
+        }
+
+        .footer__btn-example:hover {
+          background-color: $light-cornflower-blue;
+        }
+      }
+    }
+  }
+}

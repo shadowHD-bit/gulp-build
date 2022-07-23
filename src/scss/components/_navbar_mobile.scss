@@ -1,0 +1,40 @@
+.header_mobile {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: #ffffff;
+  z-index: 1999;
+  visibility: hidden;
+
+  .header_mobile_navs{
+    width: auto;
+    height: auto;
+
+    .header_mobile_nav{
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+
+        .header_mobile__nav-list{
+            list-style: none;
+
+            .header_mobile__nav-item{
+                padding: 5px 5px;
+                margin: 5px 5px;
+
+                .header_mobile__nav-link {
+                    text-decoration: none;
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 16px;
+                    color: $dark-slate-gray;
+                  }
+    
+                  .header_mobile__nav-link:hover {
+                    color: $light-cornflower-blue;
+                  }
+            }
+        }
+    }
+  }
+}

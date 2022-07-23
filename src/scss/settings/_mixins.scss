@@ -1,1 +1,41 @@
 // Mixin detection file
+
+//Media query mixins
+@mixin media_1400 {
+    @media (max-width: $breakpoint_xxl){
+        @content;
+    }
+}
+
+@mixin media_1200 {
+    @media (max-width: $breakpoint_xl){
+        @content;
+    }
+}
+
+@mixin media_992 {
+    @media (max-width: $breakpoint_lg){
+        @content;
+    }
+}
+
+@mixin media_768 {
+    @media (max-width: $breakpoint_md){
+        @content;
+    }
+}
+
+@mixin media_576{
+    @media (max-width: $breakpoint_sm){
+        @content;
+    }
+}
+
+//Font mixins example...
+@mixin font_title {
+    
+}
+
+@mixin font_text {
+    
+}

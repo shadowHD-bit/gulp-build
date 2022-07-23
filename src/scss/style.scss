@@ -1,1 +1,18 @@
-// Main styles file
+// Import settings files
+@import "./settings/variables";
+@import "./settings/mixins";
+@import "./settings/fonts";
+@import "./settings/colors";
+@import "./settings/breakpoints";
+@import "./settings/scrollbar";
+//@import "./settings/normalize";
+@import "./settings/reset";
+
+// Import main styles
+@import "./components/footer";
+@import "./components/navbar";
+@import "./components/navbar_mobile";
+@import "./components/preloader";
+@import "./components/main_example";
+
+// Other styles
